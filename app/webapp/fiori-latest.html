@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="sap-ui-fesr" content="/fesr" />
     <title>Bookshop</title>
+    
+    <!-- Custom Theme Support -->
+    <link rel="stylesheet" id="custom-theme-var-light" href="./resources/theme/custom/variables-light.css"/>
+    <link rel="stylesheet" id="custom-theme-var-dark" href="./resources/theme/custom/variables-dark.css"/>
+
+    <style>
+        #shell-header-icon {
+          content: var(--sapCompanyLogo);
+        }
+        .sapUiGlobalBackgroundImage {
+          background-image: var(--sapShell_BackgroundImage) !important;
+        }
+        /* use custom user icon */
+        /*
+        #userActionsMenuHeaderButton.sapFAvatar {
+          background-image: var(--sapCompanyLogo);
+          background-size: contain;
+        }
+        #userActionsMenuHeaderButton .sapFAvatarInitialsHolder {
+          visibility: hidden;
+        }
+        */
+    </style>
+
     <script>
       window["sap-ushell-config"] = {
         defaultRenderer: "fiori2",
